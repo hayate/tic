@@ -241,7 +241,7 @@ abstract class TIC
             {
                 if (count($match) == 4)
                 {
-                    $this->bgColor = array(hexdec($match[1]), hexdec($match[2]), hexdec($match[3]));
+                    $this->fontColor = array(hexdec($match[1]), hexdec($match[2]), hexdec($match[3]));
                 }
             }
         }
