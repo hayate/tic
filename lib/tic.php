@@ -220,15 +220,30 @@ abstract class TIC
     }
 
     /**
-     * @param int|array $rgb If int (red) should be between 0 and 255, if array should have 3 ints, each between 0 and 255
+     * @param int|array|string $rgb If int (red) should be between 0
+     * and 255, if array should have 3 ints, each between 0 and 255,
+     * if string should be 6 hex optionally prepended with #
+     * i.e. ff0000 or #ff0000
      * @param int $g Ignored if $rgb is an array, is the green part of RGB
      * @param int $b Ignored if $rgb is an array, is the blue part of RGB
      * @return TIC method is chainable
      */
     public function setFontColor($rgb, $g = 0x00, $b = 0x00)
     {
-        if (is_array($rgb)) {
+        if (is_array($rgb))
+        {
             $this->fontColor = $rgb;
+        }
+        else if (is_string($rgb))
+        {
+            $match = array();
+            if (preg_match('/^#?([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})$/i', $rgb, $match) == 1)
+            {
+                if (count($match) == 4)
+                {
+                    $this->bgColor = array(hexdec($match[1]), hexdec($match[2]), hexdec($match[3]));
+                }
+            }
         }
         else {
             $this->fontColor = array($rgb, $g, $b);
@@ -237,15 +252,30 @@ abstract class TIC
     }
 
     /**
-     * @param int|array $rgb If int (red) should be between 0 and 255, if array should have 3 ints, each between 0 and 255
+     * @param int|array|string $rgb If int (red) should be between 0
+     * and 255, if array should have 3 ints, each between 0 and 255,
+     * if string should be 6 hex optionally prepended with #
+     * i.e. ff0000 or #ff0000
      * @param int $g Ignored if $rgb is an array, is the green part of RGB
      * @param int $b Ignored if $rgb is an array, is the blue part of RGB
      * @return TIC method is chainable
      */
     public function setBgColor($rgb, $g = 0x00, $b = 0x00)
     {
-        if (is_array($rgb)) {
+        if (is_array($rgb))
+        {
             $this->bgColor= $rgb;
+        }
+        else if (is_string($rgb))
+        {
+            $match = array();
+            if (preg_match('/^#?([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})$/i', $rgb, $match) == 1)
+            {
+                if (count($match) == 4)
+                {
+                    $this->bgColor = array(hexdec($match[1]), hexdec($match[2]), hexdec($match[3]));
+                }
+            }
         }
         else {
             $this->bgColor = array($rgb, $g, $b);
