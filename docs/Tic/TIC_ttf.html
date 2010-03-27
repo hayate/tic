@@ -25,8 +25,8 @@
 <p class="short-description">TIC concrete class for TrueType Fonts</p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Andrea Belvedere</li>
-				<li><span class="field">version:</span> 1.0</li>
-				<li><span class="field">copyright:</span> (c) 2009 Andrea Belvedere</li>
+				<li><span class="field">version:</span> 1.1</li>
+				<li><span class="field">copyright:</span> (c) 2010 Andrea Belvedere</li>
 				<li><span class="field">license:</span> <a href="http://www.gnu.org/licenses/lgpl.txt">Lesser General Public License</a></li>
 			</ul>
 		<p class="notes">
@@ -34,7 +34,7 @@
 		</p>
 		
 				
-		<pre><a href="../Tic/TIC.html">TIC</a>
+		<pre><a href="../tic/TIC.html">TIC</a>
    |
    --TIC_ttf</pre>
 	
@@ -91,37 +91,52 @@
 		<div class="info-box-body">
 										<h4>Inherited Variables</h4>
 				<A NAME='inherited_vars'><!-- --></A>
-									<p>Inherited from <span class="classname"><a href="../Tic/TIC.html">TIC</a></span></p>
+									<p>Inherited from <span class="classname"><a href="../tic/TIC.html">TIC</a></span></p>
 					<blockquote>
 													<span class="var-title">
-								<span class="var-name"><a href="../Tic/TIC.html#var$angle">TIC::$angle</a></span><br>
+								<span class="var-name"><a href="../tic/TIC.html#var$align">TIC::$align</a></span><br>
 							</span>
 													<span class="var-title">
-								<span class="var-name"><a href="../Tic/TIC.html#var$background">TIC::$background</a></span><br>
+								<span class="var-name"><a href="../tic/TIC.html#var$angle">TIC::$angle</a></span><br>
 							</span>
 													<span class="var-title">
-								<span class="var-name"><a href="../Tic/TIC.html#var$color">TIC::$color</a></span><br>
+								<span class="var-name"><a href="../tic/TIC.html#var$bgColor">TIC::$bgColor</a></span><br>
 							</span>
 													<span class="var-title">
-								<span class="var-name"><a href="../Tic/TIC.html#var$font">TIC::$font</a></span><br>
+								<span class="var-name"><a href="../tic/TIC.html#var$font">TIC::$font</a></span><br>
 							</span>
 													<span class="var-title">
-								<span class="var-name"><a href="../Tic/TIC.html#var$gd">TIC::$gd</a></span><br>
+								<span class="var-name"><a href="../tic/TIC.html#var$fontColor">TIC::$fontColor</a></span><br>
 							</span>
 													<span class="var-title">
-								<span class="var-name"><a href="../Tic/TIC.html#var$height">TIC::$height</a></span><br>
+								<span class="var-name"><a href="../tic/TIC.html#var$gd">TIC::$gd</a></span><br>
 							</span>
 													<span class="var-title">
-								<span class="var-name"><a href="../Tic/TIC.html#var$padding">TIC::$padding</a></span><br>
+								<span class="var-name"><a href="../tic/TIC.html#var$horPadding">TIC::$horPadding</a></span><br>
 							</span>
 													<span class="var-title">
-								<span class="var-name"><a href="../Tic/TIC.html#var$size">TIC::$size</a></span><br>
+								<span class="var-name"><a href="../tic/TIC.html#var$imgHeight">TIC::$imgHeight</a></span><br>
 							</span>
 													<span class="var-title">
-								<span class="var-name"><a href="../Tic/TIC.html#var$text">TIC::$text</a></span><br>
+								<span class="var-name"><a href="../tic/TIC.html#var$imgWidth">TIC::$imgWidth</a></span><br>
 							</span>
 													<span class="var-title">
-								<span class="var-name"><a href="../Tic/TIC.html#var$width">TIC::$width</a></span><br>
+								<span class="var-name"><a href="../tic/TIC.html#var$size">TIC::$size</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../tic/TIC.html#var$text">TIC::$text</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../tic/TIC.html#var$textHeight">TIC::$textHeight</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../tic/TIC.html#var$textWidth">TIC::$textWidth</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../tic/TIC.html#var$valign">TIC::$valign</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../tic/TIC.html#var$verPadding">TIC::$verPadding</a></span><br>
 							</span>
 											</blockquote> 
 										
@@ -141,7 +156,7 @@
 			<A NAME='method_detail'></A>
 
 <a name="method__construct" id="__construct"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<span class="method-title">Constructor __construct</span> (line <span class="line-number">43</span>)
@@ -165,9 +180,9 @@
 				<span class="var-type">string</span>
 				<span class="var-name">$font</span><span class="var-description">: Full or relative path to a font  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-var">$tic&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../Tic/TIC_ttf.html">TIC_ttf</a></span><span class="src-sym">(</span><span class="src-str">'/full/path/font.ttf'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
-<li><div class="src-line">&nbsp;<span class="src-var">$tic</span><span class="src-sym">-&gt;</span><a href="../Tic/TIC.html#methodsetText">setText</a><span class="src-sym">(</span><span class="src-str">'Hello&nbsp;World&nbsp;!'</span><span class="src-sym">)</span></div></li>
-<li><div class="src-line">&nbsp;<span class="src-sym">-&gt;</span><a href="../Tic/TIC.html#methodsetBackground">setBackground</a><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-num">0x00</span><span class="src-sym">,&nbsp;</span><span class="src-num">0x00</span><span class="src-sym">,&nbsp;</span><span class="src-num">0xff</span><span class="src-sym">))</span></div></li>
-<li><div class="src-line">&nbsp;<span class="src-sym">-&gt;</span><a href="../Tic/TIC.html#methodsetColor">setColor</a><span class="src-sym">(</span><span class="src-num">0x00</span><span class="src-sym">,&nbsp;</span><span class="src-num">0x00</span><span class="src-sym">,&nbsp;</span><span class="src-num">0x00</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$tic</span><span class="src-sym">-&gt;</span><a href="../tic/TIC.html#methodsetText">setText</a><span class="src-sym">(</span><span class="src-str">'Hello&nbsp;World&nbsp;!'</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">-&gt;</span><a href="../tic/TIC.html#methodsetBgColor">setBgColor</a><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-num">0x00</span><span class="src-sym">,&nbsp;</span><span class="src-num">0x00</span><span class="src-sym">,&nbsp;</span><span class="src-num">0xff</span><span class="src-sym">))</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">-&gt;</span><a href="../tic/TIC.html#methodsetFontColor">setFontColor</a><span class="src-sym">(</span><span class="src-num">0x00</span><span class="src-sym">,&nbsp;</span><span class="src-num">0x00</span><span class="src-sym">,&nbsp;</span><span class="src-num">0x00</span><span class="src-sym">)</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-sym">-&gt;</span><a href="../Tic/TIC_ttf.html#methodcreate">create</a><span class="src-sym">(</span><span class="src-id">true</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
 <li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
 </ol></div></span>			</li>
@@ -176,12 +191,12 @@
 			<hr class="separator" />
 		<div class="notes">Redefinition of:</div>
 		<dl>
-			<dt><a href="../Tic/TIC.html#method__construct">TIC::__construct()</a></dt>
+			<dt><a href="../tic/TIC.html#method__construct">TIC::__construct()</a></dt>
 					</dl>
 			
 	</div>
 <a name="methodcreate" id="create"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
 		<span class="method-title">create</span> (line <span class="line-number">55</span>)
@@ -214,16 +229,16 @@
 			<hr class="separator" />
 		<div class="notes">Redefinition of:</div>
 		<dl>
-			<dt><a href="../Tic/TIC.html#methodcreate">TIC::create()</a></dt>
+			<dt><a href="../tic/TIC.html#methodcreate">TIC::create()</a></dt>
 						<dd>Creates the image with the text, optionally output the image</dd>
 					</dl>
 			
 	</div>
 <a name="methoddimension" id="dimension"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">dimension</span> (line <span class="line-number">94</span>)
+		<span class="method-title">dimension</span> (line <span class="line-number">112</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -261,7 +276,7 @@
 			<hr class="separator" />
 		<div class="notes">Redefinition of:</div>
 		<dl>
-			<dt><a href="../Tic/TIC.html#methoddimension">TIC::dimension()</a></dt>
+			<dt><a href="../tic/TIC.html#methoddimension">TIC::dimension()</a></dt>
 						<dd>Calculates text width, height and x, y coordinates where drawing starts.</dd>
 					</dl>
 			
@@ -269,22 +284,28 @@
 							<h4>Inherited Methods</h4>
 				<a name='inherited_methods'><!-- --></a>	
 									<!-- =========== Summary =========== -->
-					<p>Inherited From <span class="classname"><a href="../Tic/TIC.html">TIC</a></span></p>
+					<p>Inherited From <span class="classname"><a href="../tic/TIC.html">TIC</a></span></p>
 					<blockquote>
-													<span class="method-name"><a href="../Tic/TIC.html#method__construct">TIC::__construct()</a></span><br>
-													<span class="method-name"><a href="../Tic/TIC.html#methodcreate">TIC::create()</a></span><br>
-													<span class="method-name"><a href="../Tic/TIC.html#methoddimension">TIC::dimension()</a></span><br>
-													<span class="method-name"><a href="../Tic/TIC.html#methodfactory">TIC::factory()</a></span><br>
-													<span class="method-name"><a href="../Tic/TIC.html#methodrender">TIC::render()</a></span><br>
-													<span class="method-name"><a href="../Tic/TIC.html#methodsetAngle">TIC::setAngle()</a></span><br>
-													<span class="method-name"><a href="../Tic/TIC.html#methodsetBackground">TIC::setBackground()</a></span><br>
-													<span class="method-name"><a href="../Tic/TIC.html#methodsetColor">TIC::setColor()</a></span><br>
-													<span class="method-name"><a href="../Tic/TIC.html#methodsetPadding">TIC::setPadding()</a></span><br>
-													<span class="method-name"><a href="../Tic/TIC.html#methodsetSize">TIC::setSize()</a></span><br>
-													<span class="method-name"><a href="../Tic/TIC.html#methodsetText">TIC::setText()</a></span><br>
-													<span class="method-name"><a href="../Tic/TIC.html#methodsetWidth">TIC::setWidth()</a></span><br>
-													<span class="method-name"><a href="../Tic/TIC.html#methodwrap_text">TIC::wrap_text()</a></span><br>
-													<span class="method-name"><a href="../Tic/TIC.html#method__destruct">TIC::__destruct()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#method__construct">TIC::__construct()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodcreate">TIC::create()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methoddimension">TIC::dimension()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodfactory">TIC::factory()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodrender">TIC::render()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodsetAngle">TIC::setAngle()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodsetBgColor">TIC::setBgColor()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodsetFontColor">TIC::setFontColor()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodsetFontSize">TIC::setFontSize()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodsetHorAlign">TIC::setHorAlign()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodsetHorPadding">TIC::setHorPadding()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodsetImgHeight">TIC::setImgHeight()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodsetImgWidth">TIC::setImgWidth()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodsetPadding">TIC::setPadding()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodsetText">TIC::setText()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodsetVerAlign">TIC::setVerAlign()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodsetVerPadding">TIC::setVerPadding()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodwrap_text">TIC::wrap_text()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#methodwrap_word">TIC::wrap_word()</a></span><br>
+													<span class="method-name"><a href="../tic/TIC.html#method__destruct">TIC::__destruct()</a></span><br>
 											</blockquote>
 										
 		</div>
@@ -292,7 +313,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Mon, 20 Apr 2009 08:51:14 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.2</a>
+		Documentation generated on Sat, 27 Mar 2010 17:02:48 +0900 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>
